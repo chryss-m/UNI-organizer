@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="#ffffff"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="141dp">
+
+        <TextView
+            android:id="@+id/deleteMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Are you sure?"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+
+
+
+        <Button
+            android:id="@+id/buttonDeleteTask"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="?attr/colorPrimaryVariant"
+            android:text="Delete"
+
+            android:textColor="?attr/colorAccent" />
+
+        <Button
+            android:id="@+id/buttonCancelTask"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="?attr/colorPrimaryVariant"
+            android:text="Cancel"
+            android:textColor="?attr/colorAccent" />
+    </LinearLayout>
+</RelativeLayout>

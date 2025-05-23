@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_colors_windows">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_centerInParent="true">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Title"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/enterText_Task_Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:paddingStart="7dp"
+            android:padding="7dp"
+            android:textSize="15sp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Description"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/enterText_Task_Description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:paddingStart="7dp"
+            android:padding="7dp"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Deadline"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/enterDeadline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:paddingStart="7dp"
+            android:padding="7dp"
+            android:textSize="15sp"
+            android:focusable="false"
+            android:clickable="true"
+            android:inputType="none"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Course"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="15sp" />
+
+        <Spinner
+            android:id="@+id/courseSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"/>
+
+
+
+        <Button
+            android:id="@+id/buttonSaveTask"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/button_tint"
+            android:text="Save"
+            android:layout_marginTop="20dp"
+
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/buttonBackTask"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/button_tint"
+            android:text="Back"
+            android:layout_marginTop="10dp"
+
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="32dp"
+    android:background="@color/soft_matcha">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/modeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/round_button_background"
+        app:backgroundTint="@color/matcha"
+        android:text="Mode"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:elevation="4dp" />
+
+    <TextView
+        android:id="@+id/timerText"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:gravity="center"
+        android:text="00:00"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:textColor="@color/ever_green"
+        android:background="@drawable/round_timer_background"
+        android:elevation="6dp" />
+
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status: Manual"
+        android:textSize="18sp"
+        android:textColor="@color/ever_green"
+        android:layout_marginTop="12dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/startButton"
+            android:text="Start"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_margin="8dp"
+            android:backgroundTint="@color/matcha"
+            android:textColor="@color/white"
+            android:background="@drawable/rounded_button_green" />
+
+        <Button
+            android:id="@+id/pauseButton"
+            android:text="Pause"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_margin="8dp"
+            android:backgroundTint="@color/matcha_dark"
+            android:textColor="@color/white"
+            android:background="@drawable/rounded_button_green" />
+
+        <Button
+            android:id="@+id/resetButton"
+            android:text="Reset"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_margin="8dp"
+            android:backgroundTint="@color/ever_green"
+            android:textColor="@color/white"
+            android:background="@drawable/rounded_button_green" />
+    </LinearLayout>
+
+</LinearLayout>

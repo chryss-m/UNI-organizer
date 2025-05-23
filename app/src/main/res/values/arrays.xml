@@ -1,0 +1,7 @@
+<resources>
+    <string-array name="theme_colors">
+        <item>Red</item>
+        <item>Blue</item>
+        <item>Green</item>
+    </string-array>
+</resources>

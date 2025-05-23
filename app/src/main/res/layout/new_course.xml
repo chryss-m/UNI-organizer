@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_colors_windows">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Name"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/enterCourse_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:padding="7dp"
+            android:paddingStart="7dp"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Professor"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/enter_professor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:padding="7dp"
+            android:paddingStart="7dp"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Day"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/enterDay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:clickable="true"
+            android:focusable="false"
+            android:hint="Select a day"
+            android:padding="7dp"
+            android:paddingStart="7dp"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Time"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/enterTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="false"
+            android:hint="Select Time"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Room"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/entercourse_room"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:padding="7dp"
+            android:paddingStart="7dp"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Grade"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/entercourse_grade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:padding="7dp"
+            android:paddingStart="7dp"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Enter ECTS"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/entercourse_ects"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:padding="7dp"
+            android:paddingStart="7dp"
+            android:textSize="15sp" />
+        <CheckBox
+            android:id="@+id/checkbox_completed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Completed"
+            android:layout_marginTop="12dp"/>
+
+
+        <Button
+            android:id="@+id/buttonSaveCourse"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/button_tint"
+            android:text="Save"
+
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/buttonBackCourse"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/button_tint"
+            android:text="Back"
+
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

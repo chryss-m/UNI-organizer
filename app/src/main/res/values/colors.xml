@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="pistage">#d9e4d7</color>
+    <color name="ever_green">#becfbb</color>
+    <color name="matcha">#8ea48b</color>
+    <color name="calm_green">#324d3e</color>
+
+    <color name="soft_matcha">#EFFAF1</color>
+    <color name="matcha_dark">#7FB58C</color>
+
+
+
+</resources>
+

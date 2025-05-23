@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Organizer</string>
+
+    <string-array name="timer_modes">
+        <item>Manual</item>
+        <item>Pomodoro 25+5</item>
+        <item>Pomodoro 50+10</item>
+    </string-array>
+
+    <string-array name="courses_filters">
+
+        <item>All</item>
+        <item>Active</item>
+        <item>Finished</item>
+    </string-array>
+
+    <string-array name="task_filter_options">
+        <item>All</item>
+        <item>Deadline</item>
+        <item>Active</item>
+
+    </string-array>
+
+</resources>
