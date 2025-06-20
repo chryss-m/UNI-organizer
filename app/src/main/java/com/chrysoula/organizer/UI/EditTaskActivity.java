@@ -23,10 +23,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
-/**
- * EditTaskActivity allows the user to update an existing task.
- * Fields include task title, description, deadline, course selection, and completion status.
- */
+
 public class EditTaskActivity extends AppCompatActivity{
 
     private EditText editTitle, editDescription, editDeadline;

@@ -18,8 +18,6 @@ import java.util.Arrays;
 
 public class SettingsActivity extends AppCompatActivity {
 
-    private Spinner themeSpinner;
-    private final String[] themes = {"Red", "Purple", "BlackWhite", "Brown"};
 
 
     @Override

@@ -19,8 +19,8 @@ public class Task {
 
     private int userId;
 
-    //Class fields
-    private String title;  //foreign key
+
+    private String title;
     private String description;
 
     @TypeConverters({DateConverter.class})

@@ -38,7 +38,7 @@ public class CourseActivity extends AppCompatActivity {
     private organizerViewModel viewModel;
     private int currentUserId;
 
-    // Activity result launcher to handle new course activity results
+    //activity result launcher to handle new course activity results
     private final ActivityResultLauncher<Intent> addCourseResultLauncher = registerForActivityResult(
             new ActivityResultContracts.StartActivityForResult(),
             result -> {
@@ -53,7 +53,7 @@ public class CourseActivity extends AppCompatActivity {
                     int courseECTS = data.getIntExtra("course_ECTS", 0);
                     boolean isCompleted = data.getBooleanExtra("course_completed", false);
 
-                    // Only insert if all necessary info is available
+
                     if (courseName != null && courseProfessor != null  && courseDay != null && courseTime != null) {
                         Course newCourse = new Course(currentUserId, courseName, courseProfessor, courseDay, courseTime, courseRoom, courseGrade, courseECTS, isCompleted);
                         Log.d("CourseActivity", "Inserting course: " + newCourse.toString());

@@ -14,7 +14,6 @@ public class Course {
     private int userId;
     private String name;
 
-
     private String professor;
     private String day;
     private String time;

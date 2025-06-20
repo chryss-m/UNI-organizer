@@ -131,7 +131,7 @@ public class LoginActivity extends AppCompatActivity {
             });
         });
 
-        //Toggle password visibility (show/hide password)
+        //show/hide password
         togglePassword.setOnClickListener(v -> {
             if (passwordEditText.getInputType() == (InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD)) {
                 passwordEditText.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD);
@@ -145,9 +145,9 @@ public class LoginActivity extends AppCompatActivity {
         });
     }
 
-    /**
-     * Saves the logged-in user's username in SharedPreferences for future auto-login
-     */
+
+     // Saves the logged-in user's username in SharedPreferences for future auto-login
+
     private void saveLoginState(String username) {
         SharedPreferences prefs = getSharedPreferences("user_prefs", MODE_PRIVATE);
         prefs.edit().putString("logged_in_user", username).apply();

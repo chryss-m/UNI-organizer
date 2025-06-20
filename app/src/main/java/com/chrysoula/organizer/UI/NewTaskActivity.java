@@ -27,10 +27,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 
-/**
- * NewTaskActivity allows the user to input task details (title, description, deadline, course)
- * and returns the data to TaskActivity upon saving.
- */
+
 public class NewTaskActivity extends AppCompatActivity {
 
     private EditText enterText_Task_Title, enterText_Task_Description, enterDeadline;

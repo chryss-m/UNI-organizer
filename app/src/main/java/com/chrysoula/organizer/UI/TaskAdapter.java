@@ -25,7 +25,7 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskViewHolder> {
     private final Context context;
     private final SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy", Locale.getDefault());
     private final organizerViewModel viewModel;
-    private AdapterView.OnItemClickListener listener;
+
     private final View dimBackground;
 
     public TaskAdapter(Context context, organizerViewModel viewModel, View dimBackground) {

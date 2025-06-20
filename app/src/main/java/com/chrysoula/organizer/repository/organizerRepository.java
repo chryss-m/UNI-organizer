@@ -19,17 +19,17 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 
-//it takes over access to the DAOs
+
 public class organizerRepository {
 
-    private final  CourseDAO courseDAO;        //DAO for accessing courses
-    private final  TaskDAO taskDAO;  //DAO for accessing tasks
+    private final  CourseDAO courseDAO;
+    private final  TaskDAO taskDAO;
 
-    private final UserDAO userDAO;  //DAO for accessing users
+    private final UserDAO userDAO;
 
     private final  ExecutorService executorService;    //to run DB operations in background threads
 
-    //Constructor for initialization
+
     public organizerRepository(Application application){
 
         AppDatabase database = AppDatabase.getDatabase((application));
@@ -146,10 +146,6 @@ public class organizerRepository {
                     if (userId > 0) {
                         Log.d("RegisterUser", "User created successfully with id = " + userId);
 
-                        Course course = new Course((int) userId, "Μάθημα", "Καθηγητής", "Δευτέρα", "10:00", "Αίθουσα", 0, 6, false);
-                        courseDAO.insert(course);
-
-                        Log.d("RegisterUser", "Default course created for userId = " + userId);
 
                         callback.onResult(true, "Successful Registration!");
                     } else {

@@ -88,9 +88,6 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
-
-
         //OBSERVE TASKS TO UPDATE PROGRESS BAR
         viewModel.getTasksByUser(currentUserId).observe(this, tasks -> {
             if (tasks != null && !tasks.isEmpty()) {
